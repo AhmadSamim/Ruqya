@@ -36,13 +36,12 @@ fun RuqyaApp(mainViewModel: MainViewModel) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(paddingValues)
-                .padding(16.dp),
+                .padding(paddingValues),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             RuqyaNavHost(navController, mainViewModel)
-            HomeScreen(navController)
+
         }
     }
 }

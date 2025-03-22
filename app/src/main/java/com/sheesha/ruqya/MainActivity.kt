@@ -8,7 +8,7 @@ import androidx.activity.viewModels
 import androidx.compose.runtime.collectAsState
 import com.sheesha.ruqya.viewmodel.MainViewModel
 import com.sheesha.ruqya.ui.theme.RuqyaTheme
-import com.sheesha.ruqya.ui.theme.views.HomeScreen
+
 import com.sheesha.ruqya.ui.theme.views.RuqyaApp
 import com.sheesha.ruqya.ui.theme.views.SurahListView
 
