@@ -1,6 +1,6 @@
 package com.sheesha.ruqya.model
 
-data class Surah(
+data class Aya(
     val surahName: String,
     val surahNameTranslation: String,
     val ayahNo: Int,
@@ -11,7 +11,9 @@ data class Surah(
 
 data class Audio(
     val `1`: Reciter,
-    val `2`: Reciter
+    val `2`: Reciter,
+    val `3`: Reciter,
+    val `4`: Reciter
 )
 
 data class Reciter(

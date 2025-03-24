@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sheesha.ruqya.model.QuranApiService
 import com.sheesha.ruqya.model.RetrofitInstance
-import com.sheesha.ruqya.model.Surah
+import com.sheesha.ruqya.model.Aya
 import com.sheesha.ruqya.model.VersesBasedOnCategory.generalRuqya
 import com.sheesha.ruqya.model.VersesBasedOnCategory.symbolicSihrVerses
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -19,15 +19,14 @@ class MainViewModel : ViewModel() {
 
 
 
-    private val _generalRuqyaFlow = MutableStateFlow<List<Surah>>(emptyList())
-    val generalRuqyaFlow: StateFlow<List<Surah>> = _generalRuqyaFlow.asStateFlow()
+    private val _generalRuqyaFlow = MutableStateFlow<List<Aya>>(emptyList())
+    val generalRuqyaFlow: StateFlow<List<Aya>> = _generalRuqyaFlow.asStateFlow()
 
-    private val _symbolicSihrVersesFlow = MutableStateFlow<List<Surah>>(emptyList())
-    val  symbolicSihrVersesFlow: StateFlow<List<Surah>> = _symbolicSihrVersesFlow.asStateFlow()
+    private val _symbolicSihrVersesFlow = MutableStateFlow<List<Aya>>(emptyList())
+    val  symbolicSihrVersesFlow: StateFlow<List<Aya>> = _symbolicSihrVersesFlow.asStateFlow()
 
 
     init {
-        // Call the fetch function for each category and pass its corresponding vals and category name
         fetchSurahData(generalRuqya, "generalRuqya")
         fetchSurahData(symbolicSihrVerses, "symbolic")
 
@@ -55,13 +54,20 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    private suspend fun fetchSingleAyah(surah: Int, ayah: Int): Surah? {
+    private suspend fun fetchSingleAyah(surah: Int, ayah: Int): Aya? {
         return try {
-            apiService.getSurah(surah, ayah)
+            apiService.getAyah(surah, ayah)
         } catch (e: Exception) {
             null
         }
     }
+
+
+
+
+
+
+
 }
 
 

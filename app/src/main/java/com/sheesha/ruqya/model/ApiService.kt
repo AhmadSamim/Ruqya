@@ -6,8 +6,8 @@ import retrofit2.http.Path
 
 interface QuranApiService {
     @GET("api/{surah}/{ayah}.json")
-    suspend fun getSurah(
+    suspend fun getAyah(
         @Path("surah") surahNumber: Int,
         @Path("ayah") ayahNumber: Int
-    ): Surah
+    ): Aya
 }

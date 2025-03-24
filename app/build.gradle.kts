@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.retrofit)
+    implementation(libs.media3.exoplayer)
     implementation(libs.retrofit.gson)
     implementation(libs.navigation.compose)
     implementation(libs.navigation.ui)
