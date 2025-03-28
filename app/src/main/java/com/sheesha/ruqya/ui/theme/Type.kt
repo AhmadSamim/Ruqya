@@ -12,29 +12,29 @@ import androidx.compose.ui.text.font.Font
 import com.sheesha.ruqya.R
 
 // Custom Quranic font - Regular and Bold variants
-val AmiriQuranFont = FontFamily(
-    Font(R.font.amiri_regular, FontWeight.Normal), // Regular font
-    Font(R.font.amiri_bold, FontWeight.Bold)      // Bold font
+val QalamQuranicFont = FontFamily(
+    Font(R.font.qalam_shiped, FontWeight.Normal), // Regular font
+    Font(R.font.qalam_shiped, FontWeight.Bold)      // Bold font
 )
 
 // Set of Material typography styles with Amiri Quran applied
 val Typography = Typography(
     bodyLarge = TextStyle(
-        fontFamily = AmiriQuranFont,
+        fontFamily = QalamQuranicFont,
         fontWeight = FontWeight.Bold,  // Regular weight
-        fontSize = 24.sp,
-        lineHeight = 50.sp,
-        letterSpacing = 2.sp
+        fontSize = 32.sp,
+        lineHeight = 70.sp,
+        letterSpacing = 6.sp
     ),
     titleLarge = TextStyle(
-        fontFamily = AmiriQuranFont,
+        fontFamily = QalamQuranicFont,
         fontWeight = FontWeight.Bold,  // Bold weight for titles
         fontSize = 24.sp,
         lineHeight = 32.sp,
         letterSpacing = 0.sp
     ),
     labelSmall = TextStyle(
-        fontFamily = AmiriQuranFont,
+        fontFamily = QalamQuranicFont,
         fontWeight = FontWeight.Medium,  // If you have a medium weight
         fontSize = 12.sp,
         lineHeight = 16.sp,

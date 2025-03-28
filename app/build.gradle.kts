@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -54,7 +56,10 @@ dependencies {
     implementation(libs.media3.exoplayer)
     implementation(libs.retrofit.gson)
     implementation(libs.navigation.compose)
+    implementation(libs.hilt.navigation.compose)
     implementation(libs.navigation.ui)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
