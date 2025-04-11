@@ -14,7 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.rememberNavController
-import com.sheesha.ruqya.viewmodel.MainViewModel
+import com.sheesha.ruqya.ui.mainScreen.MainViewModel
+import com.sheesha.ruqya.ui.navigation.RuqyaNavHost
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,4 +1,4 @@
-package com.sheesha.ruqya.ui.theme.views
+package com.sheesha.ruqya.ui.navigation
 
 enum class Screen(val route: String) {
 

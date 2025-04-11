@@ -1,4 +1,4 @@
-package com.sheesha.ruqya.ui.theme.components
+package com.sheesha.ruqya.ui.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.sheesha.ruqya.model.Aya
+import com.sheesha.ruqya.data.model.Aya
 
 
 @Composable

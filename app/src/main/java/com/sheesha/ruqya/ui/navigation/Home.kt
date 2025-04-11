@@ -1,4 +1,4 @@
-package com.sheesha.ruqya.ui.theme.views
+package com.sheesha.ruqya.ui.navigation
 
 
 import androidx.compose.foundation.lazy.LazyColumn
@@ -6,7 +6,8 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 
 import androidx.navigation.NavController
-import com.sheesha.ruqya.ui.theme.components.CategoryBox
+import com.sheesha.ruqya.ui.navigation.Screen
+import com.sheesha.ruqya.ui.components.CategoryBox
 
 
 

@@ -1,4 +1,4 @@
-package com.sheesha.ruqya.model
+package com.sheesha.ruqya.data.model
 
 data class Aya(
     val surahName: String,

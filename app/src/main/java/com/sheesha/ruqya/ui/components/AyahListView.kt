@@ -1,4 +1,4 @@
-package com.sheesha.ruqya.ui.theme.views
+package com.sheesha.ruqya.ui.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,11 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.sheesha.ruqya.model.Aya
-import com.sheesha.ruqya.ui.theme.components.SurahItem
+import com.sheesha.ruqya.data.model.Aya
 
 @Composable
-fun SurahListView(ayaList: List<Aya>) {
+fun AyahListView(ayaList: List<Aya>) {
     if (ayaList.isEmpty()) {
         Box(
             modifier = Modifier.fillMaxSize(),

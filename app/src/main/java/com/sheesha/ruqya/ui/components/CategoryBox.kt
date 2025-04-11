@@ -1,4 +1,4 @@
-package com.sheesha.ruqya.ui.theme.components
+package com.sheesha.ruqya.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

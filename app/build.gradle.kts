@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
     implementation(libs.navigation.ui)
     implementation(libs.hilt.android)
+    implementation(libs.androidx.media3.session)
     ksp(libs.hilt.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
